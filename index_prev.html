@@ -15,7 +15,7 @@
 
         gtag('config', 'G-LDSQMLZ3GJ');
     </script> -->
-    <title> Chris Sha </title>
+    <title> Shuo Sha </title>
     <style>
         .indented-list {
             list-style-position: inside; /* Makes bullet points part of the text block */
@@ -31,29 +31,28 @@
             <a href="#profile-intro">Home</a>
             <a href="#updates">Updates</a>
             <a href="#research">Research</a>
-            <a href="#teaching">Teaching & Service</a>
+            <!-- <a href="#teaching">Teaching & Service</a> -->
             <!-- <a href="#projects">Projects</a> -->
         </header>
         <div id="profile">
             <div id="profile-pic">
-                <img src="assets/images/profile3.jpg" />
+                <img src="assets/images/prof_pic.jpg" />
                 <!-- <p style="text-align:left;margin-top:-15px;">Picture taken by <a
                         href="http://www.columbia.edu/~hqh2101/">Huy Ha</a></p> -->
             </div>
             <div id="profile-intro">
-                <div id="profile-name">Chris Sha</div>
+                <div id="profile-name">Shuo Sha</div>
                 <div id="profile-email">ss7050@columbia.edu</div>
                 <p align="justify">
-                    I'm a third year Applied Math major with a minor in Computer Science at Columbia University.
+                    I'm an undergraduate student in Applied Mathematics and Computer Science at Columbia University,
+                    working in the RoboPIL Lab advised by Professor <a href="https://yunzhuli.github.io/">Yunzhu Li</a>. 
+                    I'm fortunate to receive mentorship from Professor <a href="https://antonilo.github.io/">Antonio Loquerico</a> 
+                    and Professor <a href="https://brianplancher.com/">Brian Plancher</a> during my undergrad.
                 </p>
                 <p align="justify">
-                    My research interests are in 
-                    <ul class="indented-list">
-                        <li> Reinforcement Learning </li>
-                        <li> Embodied AI </li> 
-                        <li> Multimodal Models </li>
-                    </ul>
-                    with the aim of equipping agents with the skillset to autonomously accomplish tasks and interact with the open world.
+                    My research interests lie in the intersection of robotics, machine learning, and perception,
+                    with the aim of equipping physical agents with more robust, capable, and efficient skillset 
+                    to accomplish tasks and interact with the open world.
                 </p>
                 <p align="justify">
                     If you would like to collaborate, feel free to reach out to me!
@@ -79,20 +78,23 @@
         <div class="section" id="updates">
             <h1>Updates</h1>
             <ul>
-                <li><b>Aug 2024</b> I transitioned to Professor Yunzhu Li's <a href="https://yunzhuli.github.io/">RoboPIL</a> lab, working on designing a teleoperation interface that integrates a residual RL policy to enhance data quality and improve 
-                    teleoperation performance for both precision and dynamic rigid-body tasks</li>
-                <li><b>Jun 2024</b> I started my internship at <a href="https://www.baai.ac.cn/english.html">Beijing Academy of Artificial Intelligence</a> as a researcher working on developing an autonomous end-to-end vision-based locomotion policy for 
-                    Unitree H1 Humanoid robot, guided by a Video-Language Model (VLM) to perform parkour tasks, under the guidance of Professor <a href="https://z0ngqing.github.io/">Zongqing Lu</a></li>
-                <li><b>Feb 2024</b> I joined Professor <a href="https://brianplancher.com/">Brian Plancher's</a>  <a href="https://a2r-lab.org/">A2R lab</a>, working on an online parameter estimation project that leverages the Kaczmarz method to effectively address 
-                    the overdeterminedness of online system identification problems</li>
+                <li><b>Sep 2025</b> Both works on <a href="https://real-to-sim-policy-eval.github.io/">Real-to-Sim Policy Evaluation with Gaussian Splatting Simulation</a> and 
+                    <a href="https://arxiv.org/abs/2510.04839">TAG-K: Tail-Averaged Greedy Kaczmarz for Computationally Efficient and Performant Online Inertial Parameter Estimation</a> are 
+                    under review for ICRA 2026</li>
+                <li><b>Aug 2024</b> Joined Professor Yunzhu Li's <a href="https://yunzhuli.github.io/">RoboPIL</a> lab, 
+                    working on designing a residual-augmented teleoperation framework where human operators provide high-level guidance and a residual policy ensures low-level robustness</li>
+                <li><b>Jun 2024</b> Started my internship at <a href="https://www.baai.ac.cn/english.html">Beijing Academy of Artificial Intelligence</a> 
+                    training vision-based locomotion policies for the Unitree H1 humanoid robot on agile tasks, under the guidance of Professor <a href="https://z0ngqing.github.io/">Zongqing Lu</a></li>
+                <li><b>Feb 2024</b> Joined Professor <a href="https://brianplancher.com/">Brian Plancher's</a>  <a href="https://a2r-lab.org/">A2R lab</a>, 
+                    working on a project that extends the Kaczmarz Algorithm for online inertial parameter estimation problems</li>
                 <li> <b>Sep 2023</b> I transferred to Columbia University in my sophomore year to study Applied Math and Computer Science </li>
                 <li> <b>Jun 2023</b> I spent my summer doing research on point cloud registrations using geometric features 
                     at Beijing Institute of Technology's <a href="https://english.bit.edu.cn/research2020/labs/a185642.htm">State Key Laboratory of Intelligent Control and Decision of Complex Systems</a></li>
                 <li> <b>Apr 2023</b> My first <a href="https://ccsenet.org/journal/index.php/jmr/article/view/0/48584">pde paper</a> 
-                    guided by my high school math teacher was accepted by Canadian Center of Science and Education's Journal of Mathematics Research </li>
+                    was accepted by Canadian Center of Science and Education's Journal of Mathematics Research </li>
                 <li> <b>Oct 2022</b> I started doing computational biology research virtually with <a href="https://seas.yale.edu/faculty-research/faculty-directory/corey-s-ohern">Corey O'Hern</a> 
                     and wrote a paper on <a href="assets/files/pp.pdf">pathogenicity prediction of missense variants</a></li>
-                <li> <b>Sep 2022</b> I joined Unversity of California, Irvine, to pursue a B.S. in mathematics
+                <li> <b>Sep 2022</b> I joined University of California, Irvine, to pursue a B.S. in mathematics</li>
             </ul>
             <p></p>
             <div style="clear: both;"></div>
@@ -102,36 +104,48 @@
             <h1>Research</h1>
             <div>
             <ul>
+                <li><a href="https://real-to-sim-policy-eval.github.io/" class="research-proj-title">
+                    Real-to-Sim Policy Evaluation with Gaussian Splatting Simulation
+                    </a>
+                    <p>
+                        Kaifeng Zhang*, <b>Shuo Sha*</b>, Hanxiao Jiang, Matt Loper, Jay Song, Zhuo Xu, Xiaochen Hu, Changxi Zheng, Yunzhu Li
+                        <br>Under Review for ICRA 2026<br>
+                        <a href="https://real-to-sim-policy-eval.github.io/">website</a>  |  <a href="#">paper</a> | <a href="#">code</a>
+                    </p>
+                </li>
+            </ul>
+            </div>
+            <div>
+            <ul>
+                <li><a href="https://arxiv.org/abs/2510.04839" class="research-proj-title">
+                    TAG-K: Tail-Averaged Greedy Kaczmarz for Computationally Efficient and Performant Online Inertial Parameter Estimation
+                    </a>
+                    <p>
+                        <b>Shuo Sha</b>, Anupam Bhakta, Zhenyuan Jiang, Kevin Qiu, Ishaan Mahajan, Gabriel Bravo, Brian Plancher
+                        <br>Under Review for ICRA 2026<br>
+                        <a href="https://arxiv.org/abs/2510.04839">paper</a> | <a href="https://github.com/A2R-Lab/TAG-K.git">code</a>
+                    </p>
+                </li>
+            </ul>
+            </div>
+            <div>
+            <ul>
                 <li><a href="https://ccsenet.org/journal/index.php/jmr/article/view/0/48584" class="research-proj-title">
                         Analysis of 2D Maxwell's equations in a time-harmonic regime
                     </a>
                     <p>
+                        <b>Shuo Sha</b>
                         <a style="color:#000;" href="https://ccsenet.org/journal/index.php/jmr">Journal of Mathematics Research</a>, <b>Canadian Center of Science and Education</b>
-                        <br>Vol. 15, No. 2, April 2023 Issue. DOI: 10.5539/jmr.v15n2p1<br>
-                        <a href="https://ccsenet.org/journal/index.php/jmr/article/view/0/48584">website</a>  |  <a href="assets/files/pde.pdf">pdf</a>
+                        <a href="https://ccsenet.org/journal/index.php/jmr/article/view/0/48584">paper</a>
                     </p>
                 </li>
             </ul>
             </div>
 
-            <div>
-            <ul>
-                <li><a href="assets/files/pp.pdf" class="research-proj-title">
-                        Analysis of Protein Structural Features Associated with Pathogenic Missense Variants”
-                    </a>
-                    <p>
-                        <a style="color:#000;" href="https://home.liebertpub.com/publications/journal-of-computational-biology/31">Journal of Computational Biology</a>, <b>Mary Ann Liebert</b>, 
-                        <br>The paper is currently under review<br>
-                        <a href="assets/files/pp.pdf">pdf</a>
-                    </p>
-                </li>
-            </ul>
-            </div>
-
-        <div class="divider"></div>
+        <!-- <div class="divider"></div>
         <div id="teaching">
             <h1>Teaching & Service</h1>
-                <!-- <img src="assets/images/review.jpeg" alt=""> -->
+                <img src="assets/images/review.jpeg" alt="">
             <div>
                 <ul>
                     <li>
@@ -145,8 +159,8 @@
                 </ul>
             </div>
         </div>
-        <div class="divider"></div>
-    </div>
+        <div class="divider"></div>-->
+    </div> 
     <!-- <script src="js/pixi.min.js"></script> -->
     <!-- <script src="js/profile-pic.js"></script> -->
 </body>
