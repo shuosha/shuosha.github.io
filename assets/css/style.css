@@ -1,5 +1,5 @@
-:root {
-  --grey: rgb(90, 90, 90);
+:root{
+  --grey: rgb(90,90,90);
   /* Columbia Blues */
   --blue1: rgb(2,33,105);
   --blue2: rgb(0,51,160);
@@ -13,183 +13,88 @@
 }
 
 /* ---------- Base ---------- */
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  color: var(--grey);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html,body{
+  margin:0; padding:0;
+  font-family:'Source Sans Pro',sans-serif;
+  font-weight:300; letter-spacing:.5px; color:var(--grey);
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
 }
-
-p { margin: .35em 0; }
-ul { padding-left: 40px; }
-
-a { text-decoration: none; color: var(--pink1); }
-a:hover { text-decoration: underline; }
-
-h1 { font-weight: 500; color: var(--blue1); margin: .25em 0 .5em; }
-b  { font-weight: 500; }
-strong { color: #fdc450; font-weight: 700; }
-
-/* ---------- Layout ---------- */
-.page {
-  width: min(100%, var(--page-max));
-  margin-inline: auto;
-  padding-inline: 16px;
-}
+p{ margin:.35em 0; }
+ul{ padding-left:40px; }
+a{ text-decoration:none; color:var(--pink1); }
+a:hover{ text-decoration:underline; }
+h1{ font-weight:500; color:var(--blue1); margin:.25em 0 .5em; }
+b{ font-weight:500; }
+strong{ color:#fdc450; font-weight:700; }
 
 /* ---------- Header ---------- */
-#header {
-  height: 2.5em;
-  line-height: 2.5em;
-  padding-block: 10px;
-  border-bottom: 1px solid #ddd;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 9999;
-  width: min(100%, var(--page-max));
-  background-color: rgba(255, 255, 255, 0.78);
-  backdrop-filter: blur(8px);
-  display: flex;
-  justify-content: space-around;
+#header{
+  height:2.5em; line-height:2.5em; padding-block:10px;
+  border-bottom:1px solid #ddd; position:fixed; top:0; left:50%;
+  transform:translateX(-50%); z-index:9999;
+  width:min(100%, var(--page-max));
+  background-color:rgba(255,255,255,.78); backdrop-filter:blur(8px);
+  display:flex; justify-content:space-around;
 }
+#header a{ color:var(--grey); transition:color .2s ease; }
+#header a:hover{ color:var(--pink1); }
 
-#header a {
-  color: var(--grey);
-  transition: color .2s ease;
-}
-#header a:hover {
-  color: var(--pink1);
-}
-
-/* ---------- Section & Dividers ---------- */
-.section { padding-block: 28px; }
-.divider { width: 100%; border-bottom: 1px solid #ddd; }
+/* ---------- Sections ---------- */
+.section{ padding-block:28px; }
+.divider{ width:100%; border-bottom:1px solid #ddd; }
 
 /* ---------- Profile ---------- */
-#profile {
-  padding: 110px 30px 16px;
-  border-bottom: 1px solid #ddd;
+#profile{ padding:110px 30px 16px; border-bottom:1px solid #ddd; }
+#profile-pic{ float:left; margin-right:40px; text-align:center; }
+#profile img{ width:320px; max-width:40vw; border-radius:var(--radius); box-shadow:var(--shadow); }
+#profile-name{
+  font-size:clamp(28px,5vw,48px); line-height:1.05; font-weight:400;
+  margin-bottom:10px; color:var(--blue1); text-align:center;
+}
+#profile-email{ margin-bottom:16px; color:var(--blue1); text-align:center; }
+#profile p{ margin-bottom:16px; }
+
+/* ---------- Research: media cards ---------- */
+.research-list{ list-style:none; margin:0; padding:0; }
+
+.research-item{
+  display:flex; align-items:flex-start; gap:16px;
+  padding:16px 0; border-bottom:1px solid #eee;
 }
 
-#profile-pic {
-  float: left;
-  margin-right: 40px;
-  text-align: center;
+/* 16:9 thumbnail with hard containment for img/video/iframe */
+.research-thumb{
+  position:relative; flex:0 0 260px; max-width:32vw;
+  border-radius:var(--radius); background:#f5f7f9; box-shadow:var(--shadow);
+  overflow:hidden;
 }
-#profile img {
-  width: 320px;
-  max-width: 40vw;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-
-#profile-name {
-  font-size: clamp(28px, 5vw, 48px);
-  line-height: 1.05;
-  font-weight: 400;
-  margin-bottom: 10px;
-  color: var(--blue1);
-  text-align: center;
+.research-thumb::before{ content:""; display:block; padding-top:56.25%; } /* 16:9 */
+.research-thumb > img,
+.research-thumb > video,
+.research-thumb > iframe{
+  position:absolute; inset:0; width:100%; height:100%;
+  object-fit:cover; display:block; border:0;
 }
 
-#profile-email {
-  margin-bottom: 16px;
-  color: var(--blue1);
-  text-align: center;
+.research-content{ flex:1; min-width:0; }
+.research-content h3{ margin:0 0 4px; font-weight:500; color:var(--blue1); }
+.research-meta{ color:#6a737d; margin:2px 0 8px; font-size:.96em; }
+.research-links a{ margin-right:10px; }
+
+/* ---------- Pills (optional) ---------- */
+.pill{ display:inline-block; font-size:12px; padding:2px 8px; border-radius:999px; background:#f2f4f6; margin-right:6px; color:#4b5563; }
+
+/* ---------- Responsive ---------- */
+@media (max-width:900px){
+  #profile{ padding:100px 16px 12px; }
+  #profile-pic{ float:none; margin:0 0 16px; }
+  #profile img{ width:260px; max-width:70vw; }
+  #header{ justify-content:space-between; padding-inline:12px; }
 }
-
-#profile p { margin-bottom: 16px; }
-
-/* ---------- Research (media-card layout) ---------- */
-.research-list { list-style: none; padding: 0; margin: 0; }
-
-.research-item {
-  display: flex;
-  gap: 16px;
-  padding: 16px 0;
-  border-bottom: 1px solid #eee;
+@media (max-width:800px){
+  .research-item{ flex-direction:column; }
+  .research-thumb{ flex-basis:auto; max-width:100%; }
 }
-
-.research-thumb {
-  flex: 0 0 260px;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  border-radius: var(--radius);
-  background: #f5f7f9;
-  box-shadow: var(--shadow);
-}
-
-.research-thumb img,
-.research-thumb video,
-.research-thumb iframe {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border: 0;
-}
-
-.research-content { flex: 1; min-width: 0; }
-
-.research-content h3 {
-  margin: 0 0 4px;
-  font-weight: 500;
-  color: var(--blue1);
-}
-
-.research-meta {
-  color: #6a737d;
-  margin: 2px 0 8px;
-  font-size: 0.96em;
-}
-
-.research-links a { margin-right: 10px; }
-
-/* ---------- Tags / Pills ---------- */
-.pill {
-  display: inline-block;
-  font-size: 12px;
-  padding: 2px 8px;
-  border-radius: 999px;
-  background: #f2f4f6;
-  margin-right: 6px;
-  color: #4b5563;
-}
-
-/* ---------- Responsive Tweaks ---------- */
-@media (max-width: 900px) {
-  #profile {
-    padding: 100px 16px 12px;
-  }
-  #profile-pic {
-    float: none;
-    margin: 0 0 16px;
-  }
-  #profile img {
-    width: 260px;
-    max-width: 70vw;
-  }
-  #header {
-    justify-content: space-between;
-    padding-inline: 12px;
-  }
-}
-
-@media (max-width: 800px) {
-  .research-item {
-    flex-direction: column;
-  }
-  .research-thumb {
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  ul { padding-left: 24px; }
+@media (max-width:480px){
+  ul{ padding-left:24px; }
 }
