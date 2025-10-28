@@ -31,8 +31,6 @@
             <a href="#profile-intro">Home</a>
             <a href="#updates">Updates</a>
             <a href="#research">Research</a>
-            <!-- <a href="#teaching">Teaching & Service</a> -->
-            <!-- <a href="#projects">Projects</a> -->
         </header>
         <div id="profile">
             <div id="profile-pic">
@@ -45,13 +43,13 @@
                 <div id="profile-email">ss7050@columbia.edu</div>
                 <p align="justify">
                     I'm an undergraduate student in Applied Mathematics and Computer Science at Columbia University,
-                    working in the RoboPIL Lab advised by Professor <a href="https://yunzhuli.github.io/">Yunzhu Li</a>. 
-                    I'm fortunate to receive mentorship from Professor <a href="https://antonilo.github.io/">Antonio Loquerico</a> 
-                    and Professor <a href="https://brianplancher.com/">Brian Plancher</a> during my undergrad.
+                    working in the RoboPIL Lab advised by Prof. <a href="https://yunzhuli.github.io/">Yunzhu Li</a>. 
+                    I'm fortunate to receive mentorship from Prof. <a href="https://antonilo.github.io/">Antonio Loquerico</a> 
+                    and Prof. <a href="https://brianplancher.com/">Brian Plancher</a> during my undergrad.
                 </p>
                 <p align="justify">
                     My research interests lie in the intersection of robotics, machine learning, and perception,
-                    with the aim of equipping physical agents with more robust, capable, and efficient skillset 
+                    with the aim of equipping physical agents with more robust, capable, and efficient skillsets
                     to accomplish tasks and interact with the open world.
                 </p>
                 <p align="justify">
@@ -70,6 +68,9 @@
                     <a href="https://github.com/ChrisSha0104">
                       Github
                     </a>
+                    /
+                    <a href="https://x.com/shashuo0104">
+                      Twitter
                     </a>
                 </div>
             </div>
@@ -81,10 +82,11 @@
                 <li><b>Sep 2025</b> Both works on <a href="https://real-to-sim-policy-eval.github.io/">Real-to-Sim Policy Evaluation with Gaussian Splatting Simulation</a> and 
                     <a href="https://arxiv.org/abs/2510.04839">TAG-K: Tail-Averaged Greedy Kaczmarz for Computationally Efficient and Performant Online Inertial Parameter Estimation</a> are 
                     under review for ICRA 2026</li>
-                <li><b>Aug 2024</b> Joined Professor Yunzhu Li's <a href="https://yunzhuli.github.io/">RoboPIL</a> lab, 
+                <li><b>Aug 2024</b> Joined Professor <a href="https://yunzhuli.github.io/">Yunzhu Li's RoboPIL </a> lab, 
                     working on designing a residual-augmented teleoperation framework where human operators provide high-level guidance and a residual policy ensures low-level robustness</li>
                 <li><b>Jun 2024</b> Started my internship at <a href="https://www.baai.ac.cn/english.html">Beijing Academy of Artificial Intelligence</a> 
-                    training vision-based locomotion policies for the Unitree H1 humanoid robot on agile tasks, under the guidance of Professor <a href="https://z0ngqing.github.io/">Zongqing Lu</a></li>
+                    training vision-based locomotion policies for the Unitree H1 humanoid robot on agile tasks, 
+                    under the guidance of Professor <a href="https://z0ngqing.github.io/">Zongqing Lu</a></li>
                 <li><b>Feb 2024</b> Joined Professor <a href="https://brianplancher.com/">Brian Plancher's</a>  <a href="https://a2r-lab.org/">A2R lab</a>, 
                     working on a project that extends the Kaczmarz Algorithm for online inertial parameter estimation problems</li>
                 <li> <b>Sep 2023</b> I transferred to Columbia University in my sophomore year to study Applied Math and Computer Science </li>
@@ -103,66 +105,86 @@
         <div style="display:flex;flex-direction: column;" id="research">
             <h1>Research</h1>
             <div>
-            <ul>
-                <li><a href="https://real-to-sim-policy-eval.github.io/" class="research-proj-title">
-                    Real-to-Sim Policy Evaluation with Gaussian Splatting Simulation
-                    </a>
+            <ul class="research-list">
+                <li class="research-item">
+                    <div class="research-thumb">
+                    <img src="assets/images/phystwin_eval_caption.png" alt="Real-to-Sim Policy Eval">
+                    </div>
+                    <div class="research-content">
+                    <h3>
+                        <a href="https://real-to-sim-policy-eval.github.io/">
+                        Real-to-Sim Policy Evaluation with Gaussian Splatting Simulation of Soft-Body Interactions
+                        </a>
+                    </h3>
+                    <div class="research-meta">
+                        Kaifeng Zhang*, <b>Shuo Sha*</b>, Hanxiao Jiang, Matt Loper, Jay Song, Zhuo Xu, Xiaochen Hu, Changxi Zheng, Yunzhu Li  
+                    </div>
                     <p>
-                        Kaifeng Zhang*, <b>Shuo Sha*</b>, Hanxiao Jiang, Matt Loper, Jay Song, Zhuo Xu, Xiaochen Hu, Changxi Zheng, Yunzhu Li
-                        <br>Under Review for ICRA 2026<br>
-                        <a href="https://real-to-sim-policy-eval.github.io/">website</a>  |  <a href="#">paper</a> | <a href="#">code</a>
+                        Under Review for ICRA 2026
                     </p>
+                    <div class="research-links">
+                        <a href="https://real-to-sim-policy-eval.github.io/">website</a> |
+                        <a href="#">paper</a> |
+                        <a href="#">code</a>
+                    </div>
+                    </div>
                 </li>
             </ul>
             </div>
             <div>
-            <ul>
-                <li><a href="https://arxiv.org/abs/2510.04839" class="research-proj-title">
-                    TAG-K: Tail-Averaged Greedy Kaczmarz for Computationally Efficient and Performant Online Inertial Parameter Estimation
-                    </a>
-                    <p>
+            <ul class="research-list">
+                <li class="research-item">
+                    <div class="research-thumb">
+                    <video src="assets/images/km_caption_video.mp4" autoplay muted loop playsinline poster="assets/images/km_caption.png"></video>
+                    </div>
+                    <div class="research-content">
+                    <h3>
+                        <a href="https://arxiv.org/abs/2510.04839">
+                        TAG-K: Tail-Averaged Greedy Kaczmarz for Computationally Efficient and Performant Online Inertial Parameter Estimation
+                        </a>
+                    </h3>
+                    <div class="research-meta">
                         <b>Shuo Sha</b>, Anupam Bhakta, Zhenyuan Jiang, Kevin Qiu, Ishaan Mahajan, Gabriel Bravo, Brian Plancher
-                        <br>Under Review for ICRA 2026<br>
-                        <a href="https://arxiv.org/abs/2510.04839">paper</a> | <a href="https://github.com/A2R-Lab/TAG-K.git">code</a>
-                    </p>
-                </li>
-            </ul>
-            </div>
-            <div>
-            <ul>
-                <li><a href="https://ccsenet.org/journal/index.php/jmr/article/view/0/48584" class="research-proj-title">
-                        Analysis of 2D Maxwell's equations in a time-harmonic regime
-                    </a>
+                    </div>
                     <p>
-                        <b>Shuo Sha</b>
-                        <a style="color:#000;" href="https://ccsenet.org/journal/index.php/jmr">Journal of Mathematics Research</a>, <b>Canadian Center of Science and Education</b>
-                        <a href="https://ccsenet.org/journal/index.php/jmr/article/view/0/48584">paper</a>
+                        Under Review for ICRA 2026
                     </p>
+                    <div class="research-links">
+                        <a href="https://arxiv.org/abs/2510.04839">paper</a> |
+                        <a href="https://github.com/A2R-Lab/TAG-K.git">code</a>
+                    </div>
+                    </div>
                 </li>
             </ul>
             </div>
-
-        <!-- <div class="divider"></div>
-        <div id="teaching">
-            <h1>Teaching & Service</h1>
-                <img src="assets/images/review.jpeg" alt="">
             <div>
-                <ul>
-                    <li>
-                        Teaching Assistant:
-                        <ul>
-                            <li>Math 2B: Calculus II (Spring 2023, UC Irvine)</li>
-                            <li>Math 2A: Calculus I (Winter 2022, UC Irvine)</li>
-                            <li>Math 1A & 1B: Precalculus (Fall 2022, UC Irvine)</li>
-                        </ul>
-                    </li>
-                </ul>
+            <ul class="research-list">
+                <li class="research-item">
+                    <div class="research-thumb">
+                    <img src="assets/images/pde_caption.png" alt="2D Maxwell's Equations">
+                    </div>
+                    <div class="research-content">
+                    <h3>
+                        <a href="https://ccsenet.org/journal/index.php/jmr/article/view/0/48584">
+                        Analysis of 2D Maxwell's equations in a time-harmonic regime
+                        </a>
+                    </h3>
+                    <div class="research-meta">
+                        <b>Shuo Sha*</b>
+                    </div>
+                    <p>
+                        <a href="https://ccsenet.org/journal/index.php/jmr">Journal of Mathematics Research</a>, 
+                        <b>Canadian Center of Science and Education</b>
+                    </p>
+                    <div class="research-links">
+                        <a href="https://ccsenet.org/journal/index.php/jmr/article/view/0/48584">paper</a>
+                    </div>
+                    </div>
+                </li>
+            </ul>
             </div>
-        </div>
-        <div class="divider"></div>-->
     </div> 
-    <!-- <script src="js/pixi.min.js"></script> -->
-    <!-- <script src="js/profile-pic.js"></script> -->
+
 </body>
 
 </html>
