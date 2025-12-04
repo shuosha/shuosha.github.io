@@ -65,8 +65,8 @@ strong{ color:#fdc450; font-weight:700; }
 /* 16:9 thumbnail with fixed width */
 .research-thumb{
   position: relative;
-  flex: 0 0 260px;   /* <-- force same width for all */
-  max-width: 260px;  /* <-- do not grow on wide screens */
+  flex: 0 0 340px;   /* <-- force same width for all */
+  max-width: 340px;  /* <-- do not grow on wide screens */
   border-radius: var(--radius);
   background: #f5f7f9;
   box-shadow: var(--shadow);
