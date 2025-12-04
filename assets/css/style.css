@@ -76,7 +76,7 @@ strong{ color:#fdc450; font-weight:700; }
 .research-thumb::before{
   content:"";
   display:block;
-  padding-top:56.25%; /* 9/16 */
+  padding-top:41.33%; /* 900 * 372 */
 }
 /* media fills the box */
 .research-thumb > img,
