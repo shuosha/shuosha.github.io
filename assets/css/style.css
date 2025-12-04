@@ -95,10 +95,6 @@ strong{ color:#fdc450; font-weight:700; }
 .paper_title h3{ margin:0 0 4px; font-weight:500; color:var(--blue1); }
 .author_list{ color:#6a737d; margin:2px 0 8px; font-size:.96em;}
 .research-links a{ margin-right:10px; }
-.myname {
-  font-weight: 900;      /* very bold */
-  color: var(--blue1);   /* optional emphasis color */
-}
 
 /* ---------- Pills (optional) ---------- */
 .pill{ display:inline-block; font-size:12px; padding:2px 8px; border-radius:999px; background:#f2f4f6; margin-right:6px; color:#4b5563; }
