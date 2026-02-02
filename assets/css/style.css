@@ -55,10 +55,10 @@ ul {
   padding-left: 40px;
 }
 
-/* a {
+a {
   text-decoration: none;
   color: var(--orange1);
-} */
+}
 
 a:hover {
   text-decoration: underline;
@@ -262,11 +262,11 @@ main {
 .paper_title h3 a,
 .paper_title h3 a b,
 .paper_title h3 b {
-  color: var(--blue1);
+  color: var(--orange1-bold);
 }
 
 .author_list {
-  color: var(--orange1);
+  color: var(--black1);
   font-size: 1em;
   margin: 2px 0 0px;
   line-height: 1.35;
@@ -274,11 +274,11 @@ main {
 
 .author_list a,
 .author_list a b {
-  color: var(--orange1);
+  color: var(--black1);
 }
 
 .research-links {
-  color: var(--black1);
+  color: var(--orange1-bold);
   line-height: 1.3;
 
   /* Push links down to help bottom-align with thumbnail */
@@ -292,7 +292,7 @@ main {
 
 .research-links a,
 .research-links a b {
-  color: var(--black1);
+  color: var(--orange1-bold);
 }
 
 /* =========================================================
