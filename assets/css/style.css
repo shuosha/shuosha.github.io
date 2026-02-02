@@ -28,8 +28,8 @@ ul{ padding-left:40px; }
 a{ text-decoration:none; color:var(--pink1); }
 a:hover{ text-decoration:underline; }
 h1{ font-weight:500; color:var(--blue1); margin:.25em 0 .5em; }
-b{ font-weight:700; color:inherit; }
-strong{ color:#fdc450; font-weight:700; }
+b{ font-weight:700; color:inherit; font-size:.95em; }
+strong{ color:#fdc450; font-weight:700; font-size:.95em; }
 
 /* ---------- Header ---------- */
 #header{
