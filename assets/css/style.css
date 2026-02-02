@@ -55,10 +55,10 @@ ul {
   padding-left: 40px;
 }
 
-a {
+/* a {
   text-decoration: none;
   color: var(--orange1);
-}
+} */
 
 a:hover {
   text-decoration: underline;
@@ -287,6 +287,7 @@ main {
 
 .research-links a {
   margin-right: 2px;
+  font-size: 0.85em;
 }
 
 .research-links a,
