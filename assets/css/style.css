@@ -98,9 +98,12 @@ strong{ color:#fdc450; font-weight:700; }
 .paper_title h3{ margin:0 0 4px; font-weight:500; color:var(--pink1); }
 .paper_title h3 a{ color:var(--pink1); }
 .paper_title h3 a b{ color:var(--pink1); }
+.paper_title h3 b{ color:var(--pink1); }
 .author_list{ color:#000; margin:2px 0 8px; font-size:1em;}
+.author_list b{ color:#000; }
 .research-links{ color:var(--pink1); }
 .research-links a{ margin-right:10px; }
+.research-links b{ color:var(--pink1); }
 
 /* ---------- Pills (optional) ---------- */
 .pill{ display:inline-block; font-size:12px; padding:2px 8px; border-radius:999px; background:#f2f4f6; margin-right:6px; color:#4b5563; }
