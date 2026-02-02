@@ -5,7 +5,8 @@
   --blue2: rgb(0,51,160);
   --blue3: rgb(0,114,206);
   --blue4: rgb(108,172,228);
-  --pink1: #F9564F;
+  --pink1: hsl(16, 86%, 49%);
+  --pink1-bold: hsl(16, 93%, 39%);
 
   --page-max: 1000px;
   --radius: 12px;
