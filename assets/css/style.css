@@ -27,7 +27,7 @@ ul{ padding-left:40px; }
 a{ text-decoration:none; color:var(--pink1); }
 a:hover{ text-decoration:underline; }
 h1{ font-weight:500; color:var(--blue1); margin:.25em 0 .5em; }
-b{ font-weight:700; color:var(--blue1); }
+b{ font-weight:700; }
 strong{ color:#fdc450; font-weight:700; }
 
 /* ---------- Header ---------- */
