@@ -1,187 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=3" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDSQMLZ3GJ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        gtag('config', 'G-LDSQMLZ3GJ');
-    </script> -->
-    <title> Shuo Sha </title>
-    <style>
-        .indented-list {
-            list-style-position: inside; /* Makes bullet points part of the text block */
-            padding-left: 300px; /* Indents the list to the right */
-            margin-left: 80px; /* Adds some margin for extra space */
-        }
-    </style>
+  <title>Shuo Sha</title>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=4" />
 </head>
 
 <body>
-    <div style="width:1000px;margin: 0px auto;">
-        <header id="header" width="400px" style="display:flex;justify-content: space-around;">
-            <a href="#profile-intro">Home</a>
-            <!-- <a href="#updates">Updates</a> -->
-            <a href="#research">Research</a>
-        </header>
-        <div id="profile">
-            <div id="profile-pic">
-                <img src="assets/images/prof_pic.jpg" />
-                <!-- <p style="text-align:left;margin-top:-15px;">Picture taken by <a
-                        href="http://www.columbia.edu/~hqh2101/">Huy Ha</a></p> -->
-            </div>
-            <div id="profile-intro">
-                <div id="profile-name">Shuo Sha</div>
-                <div id="profile-email">ss7050@columbia.edu</div>
-                <p align="justify">
-                    I'm an undergraduate student in Applied Mathematics and Computer Science at Columbia University,
-                    working in the RoboPIL Lab advised by Prof. <a href="https://yunzhuli.github.io/">Yunzhu Li</a>. 
-                    I'm fortunate to receive mentorship from Prof. <a href="https://antonilo.github.io/">Antonio Loquerico</a> 
-                    and Prof. <a href="https://brianplancher.com/">Brian Plancher</a> during my undergrad.
-                </p>
-                <p align="justify">
-                    My research interests lie in the intersection of robotics, machine learning, and perception,
-                    with the aim of equipping physical agents with more robust, capable, and efficient skillsets
-                    to accomplish tasks and interact with the open world.
-                </p>
-                <p align="justify">
-                    If you would like to collaborate, feel free to reach out to me!
-                </p>
 
-                <div>
-                    <a href="assets/files/cv.pdf">
-                      CV
-                    </a>
-                    /
-                    <a href="https://linkedin.com/in/shuo-sha-b07527293">
-                      LinkedIn
-                    </a>
-                    /
-                    <a href="https://github.com/shuosha">
-                      Github
-                    </a>
-                    /
-                    <a href="https://x.com/shashuo0104">
-                      Twitter
-                    </a>
-                </div>
-            </div>
-            <div style="clear: both;"></div>
+  <!-- Fixed header -->
+  <header id="header">
+    <a href="#profile-intro">Home</a>
+    <a href="#research">Research</a>
+  </header>
+
+  <!-- Page container -->
+  <main style="max-width: var(--page-max); margin: 0 auto;">
+
+    <!-- Profile -->
+    <section id="profile">
+      <div id="profile-pic">
+        <img src="assets/images/prof_pic.jpg" alt="Profile photo" />
+      </div>
+
+      <div id="profile-intro">
+        <div id="profile-name">Shuo Sha</div>
+        <div id="profile-email">ss7050@columbia.edu</div>
+
+        <p align="justify">
+          I'm an undergraduate student in Applied Mathematics and Computer Science at Columbia University,
+          working in the RoboPIL Lab advised by Prof.
+          <a href="https://yunzhuli.github.io/">Yunzhu Li</a>.
+          I'm fortunate to receive mentorship from Prof.
+          <a href="https://antonilo.github.io/">Antonio Loquercio</a>
+          and Prof.
+          <a href="https://brianplancher.com/">Brian Plancher</a>.
+        </p>
+
+        <p align="justify">
+          My research interests lie in the intersection of robotics, machine learning, and perception,
+          with the aim of equipping physical agents with more robust, capable, and efficient skillsets
+          to accomplish tasks and interact with the open world.
+        </p>
+
+        <p align="justify">
+          If you would like to collaborate, feel free to reach out!
+        </p>
+
+        <div>
+          <a href="assets/files/cv.pdf">CV</a> /
+          <a href="https://linkedin.com/in/shuo-sha-b07527293">LinkedIn</a> /
+          <a href="https://github.com/shuosha">GitHub</a> /
+          <a href="https://x.com/shashuo0104">Twitter</a>
         </div>
-        <!-- <div class="section" id="updates">
-            <h1>Updates</h1>
-            <ul>
-                <li><b>Sep 2025</b> Both works on <a href="https://real2sim-eval.github.io/">Real-to-Sim Robot Policy Evaluation with Gaussian Splatting Simulation of Soft-Body Interactions</a> and 
-                    <a href="https://arxiv.org/abs/2510.04839">TAG-K: Tail-Averaged Greedy Kaczmarz for Computationally Efficient and Performant Online Inertial Parameter Estimation</a> are 
-                    under review</li>
-                <li><b>Aug 2024</b> Joined Professor <a href="https://yunzhuli.github.io/">Yunzhu Li's RoboPIL </a> lab, 
-                    working on designing a residual-augmented teleoperation framework where human operators provide high-level guidance and a residual policy ensures low-level robustness</li>
-                <li><b>Jun 2024</b> Started my internship at <a href="https://www.baai.ac.cn/english.html">Beijing Academy of Artificial Intelligence</a> 
-                    training vision-based locomotion policies for the Unitree H1 humanoid robot on agile tasks, 
-                    under the guidance of Professor <a href="https://z0ngqing.github.io/">Zongqing Lu</a></li>
-                <li><b>Feb 2024</b> Joined Professor <a href="https://brianplancher.com/">Brian Plancher's</a>  <a href="https://a2r-lab.org/">A2R lab</a>, 
-                    working on a project that extends the Kaczmarz Algorithm for online inertial parameter estimation problems</li>
-                <li> <b>Sep 2023</b> I transferred to Columbia University in my sophomore year to study Applied Math and Computer Science </li>
-                <li> <b>Jun 2023</b> I spent my summer doing research on point cloud registrations using geometric features 
-                    at Beijing Institute of Technology's <a href="https://english.bit.edu.cn/research2020/labs/a185642.htm">State Key Laboratory of Intelligent Control and Decision of Complex Systems</a></li>
-                <li> <b>Apr 2023</b> My first <a href="https://ccsenet.org/journal/index.php/jmr/article/view/0/48584">pde paper</a> 
-                    was accepted by Canadian Center of Science and Education's Journal of Mathematics Research </li>
-                <li> <b>Oct 2022</b> I started doing computational biology research virtually with <a href="https://seas.yale.edu/faculty-research/faculty-directory/corey-s-ohern">Corey O'Hern</a> 
-                    and wrote a paper on <a href="assets/files/pp.pdf">pathogenicity prediction of missense variants</a></li>
-                <li> <b>Sep 2022</b> I joined University of California, Irvine, to pursue a B.S. in mathematics</li>
-            </ul>
-            <p></p>
-            <div style="clear: both;"></div>
-        </div> -->
-        <div class="divider"></div>
-        <div style="display:flex;flex-direction: column;" id="research">
-            <h1>Research</h1>
-            <div>
-            <ul class="research-list">
-                <li class="research-item">
-                    <div class="research-thumb">
-                    <img src="assets/images/residual_caption.png" alt="Residual-Augmented Teleoperation">
-                    </div>
-                    <div class="paper_title">
-                    <h3>
-                        <a><b>Efficient and Reliable Teleoperation through Real-to-Sim-to-Real and Shared Autonomy</b></a>
-                    </h3>
-                    <div class="author_list">
-                        <a><b>Shuo Sha</b>, Yixuan Wang, Binghao Huang, Antonio Loquerico, Yunzhu Li</a>
-                    </div>
-                    <p>
-                    </p>
-                    <div class="research-links">
-                        <a>Under Review</a>
-                    </div>
-                    </div>
-                </li>
-                <li class="research-item">
-                    <div class="research-thumb">
-                    <video src="assets/images/real2sim_eval.mp4" autoplay muted loop playsinline poster="assets/images/real2sim_eval_caption.png"></video>
-                    </div>
-                    <div class="paper_title">
-                    <h3>
-                        <a href="https://real2sim-eval.github.io/">
-                        <b>Real-to-Sim Robot Policy Evaluation with Gaussian Splatting Simulation of Soft-Body Interactions </b>
-                        </a>
-                    </h3>
-                    <div class="author_list">
-                        <a>Kaifeng Zhang*, <b>Shuo Sha*</b>, Hanxiao Jiang, Matt Loper, Jay Song, Zhuo Xu, Xiaochen Hu, Changxi Zheng, Yunzhu Li</a>
-                    </div>
-                    <p>
-                    </p>
-                    <div class="research-links">
-                        <a><b>ICRA 2026</b></a>, <a href="https://real2sim-eval.github.io/">[website]</a>, <a href="https://arxiv.org/abs/2511.04665">[paper]</a>, <a href="https://github.com/kywind/real2sim-eval">[code]</a>
-                    </div>
-                    </div>
-                </li>
-                <li class="research-item">
-                    <div class="research-thumb">
-                    <video src="assets/images/km_video.mp4" autoplay muted loop playsinline poster="assets/images/km_caption.png"></video>
-                    </div>
-                    <div class="paper_title">
-                    <h3>
-                        <a href="https://arxiv.org/abs/2510.04839">
-                        TAG-K: Tail-Averaged Greedy Kaczmarz for Computationally Efficient and Performant Online Inertial Parameter Estimation
-                        </a>
-                    </h3>
-                    <div class="author_list">
-                        <a><b>Shuo Sha</b>, Anupam Bhakta, Zhenyuan Jiang, Kevin Qiu, Ishaan Mahajan, Gabriel Bravo, Brian Plancher</a>
-                    </div>
-                    <div class="research-links">
-                        <a><b>ICRA 2026</b></a>, <a href="https://arxiv.org/abs/2510.04839">[paper]</a>, <a href="https://github.com/A2R-Lab/TAG-K.git">[code]</a>
-                    </div>
-                    </div>
-                </li>
-                <li class="research-item">
-                    <div class="research-thumb">
-                    <img src="assets/images/pde_caption.png" alt="2D Maxwell's Equations">
-                    </div>
-                    <div class="paper_title">
-                    <h3>
-                        <a href="https://ccsenet.org/journal/index.php/jmr/article/view/0/48584">
-                        <b> Analysis of 2D Maxwell's equations in a time-harmonic regime</b>
-                        </a>
-                    </h3>
-                    <div class="author_list">
-                        <a><b>Shuo Sha</b></a>
-                    </div>
-                    <div class="research-links">
-                        <a><b>Journal of Mathematics Research, 2023</b></a>,
-                        <a href="https://ccsenet.org/journal/index.php/jmr/article/view/0/48584">[paper]</a>
-                    </div>
-                </li>
-            </ul>
+      </div>
+
+      <div style="clear: both;"></div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Research -->
+    <section id="research">
+      <h1>Research</h1>
+
+      <ul class="research-list">
+
+        <!-- Paper 1 -->
+        <li class="research-item">
+          <div class="research-thumb">
+            <img src="assets/images/residual_caption.png"
+                 alt="Residual-Augmented Teleoperation">
+          </div>
+
+          <div class="paper_title">
+            <h3>
+              <span><b>Efficient and Reliable Teleoperation through Real-to-Sim-to-Real and Shared Autonomy</b></span>
+            </h3>
+
+            <div class="author_list">
+              <span><b>Shuo Sha</b>, Yixuan Wang, Binghao Huang, Antonio Loquercio, Yunzhu Li</span>
             </div>
-    </div> 
+
+            <div class="research-links">
+              <span>Under Review</span>
+            </div>
+          </div>
+        </li>
+
+        <!-- Paper 2 -->
+        <li class="research-item">
+          <div class="research-thumb">
+            <video src="assets/images/real2sim_eval.mp4"
+                   autoplay muted loop playsinline
+                   poster="assets/images/real2sim_eval_caption.png"></video>
+          </div>
+
+          <div class="paper_title">
+            <h3>
+              <a href="https://real2sim-eval.github.io/">
+                <b>Real-to-Sim Robot Policy Evaluation with Gaussian Splatting Simulation of Soft-Body Interactions</b>
+              </a>
+            </h3>
+
+            <div class="author_list">
+              <span>
+                Kaifeng Zhang*, <b>Shuo Sha*</b>, Hanxiao Jiang, Matt Loper, Jay Song,
+                Zhuo Xu, Xiaochen Hu, Changxi Zheng, Yunzhu Li
+              </span>
+            </div>
+
+            <div class="research-links">
+              <span><b>ICRA 2026</b></span>,
+              <a href="https://real2sim-eval.github.io/">[website]</a>,
+              <a href="https://arxiv.org/abs/2511.04665">[paper]</a>,
+              <a href="https://github.com/kywind/real2sim-eval">[code]</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Paper 3 -->
+        <li class="research-item">
+          <div class="research-thumb">
+            <video src="assets/images/km_video.mp4"
+                   autoplay muted loop playsinline
+                   poster="assets/images/km_caption.png"></video>
+          </div>
+
+          <div class="paper_title">
+            <h3>
+              <a href="https://arxiv.org/abs/2510.04839">
+                TAG-K: Tail-Averaged Greedy Kaczmarz for Computationally Efficient and Performant Online
+                Inertial Parameter Estimation
+              </a>
+            </h3>
+
+            <div class="author_list">
+              <span><b>Shuo Sha</b>, Anupam Bhakta, Zhenyuan Jiang, Kevin Qiu,
+                Ishaan Mahajan, Gabriel Bravo, Brian Plancher</span>
+            </div>
+
+            <div class="research-links">
+              <span><b>ICRA 2026</b></span>,
+              <a href="https://arxiv.org/abs/2510.04839">[paper]</a>,
+              <a href="https://github.com/A2R-Lab/TAG-K.git">[code]</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Paper 4 -->
+        <li class="research-item">
+          <div class="research-thumb">
+            <img src="assets/images/pde_caption.png"
+                 alt="2D Maxwell equations">
+          </div>
+
+          <div class="paper_title">
+            <h3>
+              <a href="https://ccsenet.org/journal/index.php/jmr/article/view/0/48584">
+                <b>Analysis of 2D Maxwell's Equations in a Time-Harmonic Regime</b>
+              </a>
+            </h3>
+
+            <div class="author_list">
+              <span><b>Shuo Sha</b></span>
+            </div>
+
+            <div class="research-links">
+              <span><b>Journal of Mathematics Research, 2023</b></span>,
+              <a href="https://ccsenet.org/journal/index.php/jmr/article/view/0/48584">[paper]</a>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+  </main>
 
 </body>
-
 </html>
