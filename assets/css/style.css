@@ -27,7 +27,7 @@ ul{ padding-left:40px; }
 a{ text-decoration:none; color:var(--pink1); }
 a:hover{ text-decoration:underline; }
 h1{ font-weight:500; color:var(--blue1); margin:.25em 0 .5em; }
-b{ font-weight:500; }
+b{ font-weight:700; color:var(--blue1); }
 strong{ color:#fdc450; font-weight:700; }
 
 /* ---------- Header ---------- */
@@ -95,8 +95,9 @@ strong{ color:#fdc450; font-weight:700; }
 }
 
 .paper_title{ flex:1; min-width:0; }
-.paper_title h3{ margin:0 0 4px; font-weight:500; color:var(--blue1); }
-.author_list{ color:#6a737d; margin:2px 0 8px; font-size:1em;}
+.paper_title h3{ margin:0 0 4px; font-weight:500; color:var(--pink1); }
+.author_list{ color:#000; margin:2px 0 8px; font-size:1em;}
+.research-links{ color:var(--pink1); }
 .research-links a{ margin-right:10px; }
 
 /* ---------- Pills (optional) ---------- */
