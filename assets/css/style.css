@@ -1,147 +1,348 @@
-:root{
-  --grey: rgb(90,90,90);
+/* =========================================================
+   Design Tokens
+   ========================================================= */
+:root {
+  --grey: rgb(90, 90, 90);
+
   /* Columbia Blues */
-  --blue1: rgb(2,33,105);
-  --blue2: rgb(0,51,160);
-  --blue3: rgb(0,114,206);
-  --blue4: rgb(108,172,228);
+  --blue1: rgb(2, 33, 105);
+  --blue2: rgb(0, 51, 160);
+  --blue3: rgb(0, 114, 206);
+  --blue4: rgb(108, 172, 228);
+
   --pink1: hsl(16, 86%, 49%);
   --pink1-bold: hsl(16, 90%, 30%);
 
   --page-max: 1000px;
+
   --radius: 12px;
-  --shadow: 0 2px 10px rgba(0,0,0,0.05);
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* ---------- Base ---------- */
-body{
-  font-size: 1rem;      /* 1rem = 18px from html { font-size:18px } */
-  line-height: 1.45;
-}
-html,body{
-  margin:0; padding:0;
-  font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight:300; letter-spacing:.5px; color:var(--grey);
-  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-}
+/* =========================================================
+   Base
+   ========================================================= */
 html {
   font-size: 18px; /* globally +2px over default 16px */
 }
-p{ margin:.35em 0; }
-ul{ padding-left:40px; }
-a{ text-decoration:none; color:var(--pink1); }
-a:hover{ text-decoration:underline; }
-h1{ font-weight:500; color:var(--blue1); margin:.25em 0 .5em; }
-b{ font-weight:700; color:inherit; }
-strong{ color:#fdc450; font-weight:700; }
 
-/* ---------- Research typography ---------- */
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: var(--grey);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 1rem; /* 1rem = 18px */
+  line-height: 1.45;
+}
+
+p {
+  margin: 0.35em 0;
+}
+
+ul {
+  padding-left: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--pink1);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-weight: 500;
+  color: var(--blue1);
+  margin: 0.25em 0 0.5em;
+}
+
+b {
+  font-weight: 700;
+  color: inherit;
+}
+
+strong {
+  color: #fdc450;
+  font-weight: 700;
+}
+
+/* =========================================================
+   Header (fixed)
+   ========================================================= */
+#header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+
+  width: min(100%, var(--page-max));
+  height: 2.5em;
+  line-height: 2.5em;
+  padding-block: 10px;
+
+  display: flex;
+  justify-content: space-around;
+
+  border-bottom: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(8px);
+}
+
+#header a {
+  color: var(--grey);
+  transition: color 0.2s ease;
+}
+
+#header a:hover {
+  color: var(--pink1);
+}
+
+/* =========================================================
+   Sections / Layout
+   ========================================================= */
+.section {
+  padding-block: 28px;
+}
+
+.divider {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+main {
+  max-width: var(--page-max);
+  margin: 0 auto;
+}
+
+/* =========================================================
+   Profile
+   ========================================================= */
+#profile {
+  padding: 110px 30px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+#profile-pic {
+  float: left;
+  margin-right: 40px;
+  text-align: center;
+}
+
+#profile img {
+  width: 320px;
+  max-width: 40vw;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+#profile-name {
+  font-size: clamp(28px, 5vw, 48px);
+  line-height: 1.05;
+  font-weight: 400;
+  margin-bottom: 10px;
+
+  color: var(--blue1);
+  text-align: center;
+}
+
+#profile-email {
+  margin-bottom: 16px;
+  color: var(--blue1);
+  text-align: center;
+}
+
+#profile p {
+  margin-bottom: 16px;
+}
+
+/* =========================================================
+   Research Typography
+   ========================================================= */
 #research,
 #research p,
 #research .author_list,
-#research .research-links{
+#research .research-links {
   font-size: 1rem;
   line-height: 1.45;
 }
 
-/* ---------- Header ---------- */
-#header{
-  height:2.5em; line-height:2.5em; padding-block:10px;
-  border-bottom:1px solid #ddd; position:fixed; top:0; left:50%;
-  transform:translateX(-50%); z-index:9999;
-  width:min(100%, var(--page-max));
-  background-color:rgba(255,255,255,.78); backdrop-filter:blur(8px);
-  display:flex; justify-content:space-around;
-}
-#header a{ color:var(--grey); transition:color .2s ease; }
-#header a:hover{ color:var(--pink1); }
-
-/* ---------- Sections ---------- */
-.section{ padding-block:28px; }
-.divider{ width:100%; border-bottom:1px solid #ddd; }
-
-/* ---------- Profile ---------- */
-#profile{ padding:110px 30px 16px; border-bottom:1px solid #ddd; }
-#profile-pic{ float:left; margin-right:40px; text-align:center; }
-#profile img{ width:320px; max-width:40vw; border-radius:var(--radius); box-shadow:var(--shadow); }
-#profile-name{
-  font-size:clamp(28px,5vw,48px); line-height:1.05; font-weight:400;
-  margin-bottom:10px; color:var(--blue1); text-align:center;
-}
-#profile-email{ margin-bottom:16px; color:var(--blue1); text-align:center; }
-#profile p{ margin-bottom:16px; }
-
-/* ---------- Research: media cards ---------- */
-.research-list{ list-style:none; margin:0; padding:0; }
-
-.research-item{
-  display:flex; align-items:flex-start; gap:16px;
-  padding:16px 0; border-bottom:1px solid #eee;
+/* =========================================================
+   Research: Media Cards
+   ========================================================= */
+.research-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* 16:9 thumbnail with fixed width */
-.research-thumb{
+.research-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Thumbnail box */
+.research-thumb {
   position: relative;
-  flex: 0 0 340px;   /* <-- force same width for all */
-  max-width: 340px;  /* <-- do not grow on wide screens */
+
+  /* fixed width for all thumbnails */
+  flex: 0 0 340px;
+  max-width: 340px;
+
   border-radius: var(--radius);
   background: #f5f7f9;
   box-shadow: var(--shadow);
   overflow: hidden;
 }
-/* keep height as 16:9 of the fixed width */
-.research-thumb::before{
-  content:"";
-  display:block;
-  padding-top:41.33%; /* 900 * 372 */
-}
-/* media fills the box */
-.research-thumb > img,
-.research-thumb > video,
-.research-thumb > iframe{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-  border:0;
+
+/* Fixed aspect ratio spacer.
+   NOTE: This is currently tuned to your existing media (not true 16:9). */
+.research-thumb::before {
+  content: "";
+  display: block;
+  padding-top: 41.33%;
 }
 
-.paper_title{ flex:1; min-width:0; }
-/* Titles controlled explicitly */
-.paper_title h3{
+/* Media fills the thumbnail */
+.research-thumb > img,
+.research-thumb > video,
+.research-thumb > iframe {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  display: block;
+  border: 0;
+}
+
+/* =========================================================
+   Research: Text Block (FIXED vertical spacing)
+   ========================================================= */
+.paper_title {
+  flex: 1;
+  min-width: 0;
+
+  /* Key: make the block behave like a vertical stack that can “balance” */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* tiny optical padding so title aligns nicely with thumbnail top */
+  padding: 2px 0;
+}
+
+/* IMPORTANT: remove default h3 margins (this was causing the top misalignment) */
+.paper_title h3 {
+  margin: 0 0 4px;
   font-size: 1.05rem;
   line-height: 1.25;
 }
-.paper_title h3 a{ color:var(--pink1); }
-.paper_title h3 a b{ color:var(--pink1); }
-.paper_title h3 b{ color:var(--pink1); }
-.author_list{ color:#000; margin:2px 0 8px; font-size:1em;}
+
+.paper_title h3 a,
+.paper_title h3 a b,
+.paper_title h3 b {
+  color: var(--pink1);
+}
+
+.author_list {
+  color: #000;
+  font-size: 1em;
+  margin: 2px 0 4px;
+  line-height: 1.35;
+}
+
 .author_list a,
 .author_list a b {
   color: #000;
 }
-.research-links{ color:var(--pink1); }
-.research-links a{ margin-right:10px; }
+
+.research-links {
+  color: var(--pink1);
+  line-height: 1.3;
+
+  /* Push links down to help bottom-align with thumbnail */
+  margin-top: auto;
+}
+
+.research-links a {
+  margin-right: 10px;
+}
+
 .research-links a,
 .research-links a b {
-  color: var(--pink1); /* or whatever you want */
+  color: var(--pink1);
 }
-/* ---------- Pills (optional) ---------- */
-.pill{ display:inline-block; font-size:12px; padding:2px 8px; border-radius:999px; background:#f2f4f6; margin-right:6px; color:#4b5563; }
 
-/* ---------- Responsive ---------- */
-@media (max-width:900px){
-  #profile{ padding:100px 16px 12px; }
-  #profile-pic{ float:none; margin:0 0 16px; }
-  #profile img{ width:260px; max-width:70vw; }
-  #header{ justify-content:space-between; padding-inline:12px; }
+/* =========================================================
+   Pills (optional)
+   ========================================================= */
+.pill {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+
+  background: #f2f4f6;
+  margin-right: 6px;
+  color: #4b5563;
 }
-@media (max-width:800px){
-  .research-item{ flex-direction:column; }
-  .research-thumb{ flex-basis:auto; max-width:100%; }
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+@media (max-width: 900px) {
+  #profile {
+    padding: 100px 16px 12px;
+  }
+
+  #profile-pic {
+    float: none;
+    margin: 0 0 16px;
+  }
+
+  #profile img {
+    width: 260px;
+    max-width: 70vw;
+  }
+
+  #header {
+    justify-content: space-between;
+    padding-inline: 12px;
+  }
 }
-@media (max-width:480px){
-  ul{ padding-left:24px; }
+
+@media (max-width: 800px) {
+  .research-item {
+    flex-direction: column;
+  }
+
+  .research-thumb {
+    flex-basis: auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  ul {
+    padding-left: 24px;
+  }
 }
