@@ -1,351 +1,150 @@
-/* =========================================================
-   Design Tokens
-   ========================================================= */
 :root {
-  --grey: rgb(90, 90, 90);
+	--grey: rgb(90, 90, 90);
+	/* Columbia Blues: https://visualidentity.columbia.edu/content/colors-1 */
+	--blue1: rgb(2,33,105);
+	--blue2: rgb(0,51,160);
+	--blue3: rgb(0,114,206);
+	--blue4: rgb(108,172,228);
+	--pink1: #F9564F;
+ }
 
-  /* Columbia Blues */
-  --blue1: rgb(2, 33, 105);
-  --blue2: rgb(0, 51, 160);
-  --blue3: rgb(0, 114, 206);
-  --blue4: rgb(108, 172, 228);
-
-  --black1: rgb(0,0,0);
-
-  --orange1: hsl(16, 86%, 49%);
-  --orange1-bold: hsl(16, 86%, 45%);
-
-  --page-max: 1000px;
-
-  --radius: 12px;
-  --shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+html, p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: var(--grey);
+}
+p{
+    margin: 0.2em;
 }
 
-/* =========================================================
-   Base
-   ========================================================= */
-html {
-  font-size: 18px; /* globally +2px over default 16px */
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  color: var(--grey);
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  font-size: 1rem; /* 1rem = 18px */
-  line-height: 1.45;
-}
-
-p {
-  margin: 0.35em 0;
+/* ol, ul {
+    list-style: none;
 }
 
 ul {
-  padding-left: 40px;
-}
+    list-style-position: inside;
+    list-style-type: none;
+} */
 
 a {
-  text-decoration: none;
-  color: var(--orange1);
+    text-decoration: none;
+    color:  var(--pink1);
 }
 
 a:hover {
   text-decoration: underline;
 }
 
+i {
+    font-style: italic;
+}
+
 h1 {
-  font-weight: 500;
-  color: var(--blue1);
-  margin: 0.25em 0 0.5em;
+    font-weight: 500;
+    color: var(--blue1);
 }
 
 b {
-  font-weight: 700;
-  color: inherit;
+    font-weight: 500;
 }
 
 strong {
-  color: #fdc450;
-  font-weight: 700;
+    color: #fdc450;
+    font-weight: 700;
 }
 
-/* =========================================================
-   Header (fixed)
-   ========================================================= */
+/**************************************************/
+
 #header {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 9999;
-
-  width: min(100%, var(--page-max));
-  height: 2.5em;
-  line-height: 2.5em;
-  padding-block: 10px;
-
-  display: flex;
-  justify-content: space-around;
-
-  border-bottom: 1px solid #ddd;
-  background-color: rgba(255, 255, 255, 0.78);
-  backdrop-filter: blur(8px);
+    height: 2em;
+    line-height: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 50% - 500px;
+    z-index: 9999;
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
 }
 
 #header a {
-  color: var(--grey);
-  transition: color 0.2s ease;
+    text-decoration: none;
+    color: var(--grey);
+    transition: color 0.3s ease;
 }
 
 #header a:hover {
-  color: var(--orange1);
+    color: var(--pink1);
 }
 
-/* =========================================================
-   Sections / Layout
-   ========================================================= */
-.section {
-  padding-block: 28px;
-}
+/**************************************************/
 
-.divider {
-  width: 100%;
-  border-bottom: 1px solid #ddd;
-}
-
-main {
-  max-width: var(--page-max);
-  margin: 0 auto;
-}
-
-/* =========================================================
-   Profile
-   ========================================================= */
 #profile {
-  padding: 110px 30px 16px;
-  border-bottom: 1px solid #ddd;
+    padding: 90px 30px 10px 30px;
+    border-bottom: 1px solid #ddd;
 }
 
 #profile-pic {
-  float: left;
-  margin-right: 40px;
-  text-align: center;
+    float: left;
+    margin-right: 40px;
+    text-align: center;
 }
 
 #profile img {
-  width: 320px;
-  max-width: 40vw;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+    width: 400px;
+    margin-bottom: 18px;
 }
 
 #profile-name {
-  font-size: clamp(28px, 5vw, 48px);
-  line-height: 1.05;
-  font-weight: 400;
-  margin-bottom: 10px;
-
-  color: var(--blue1);
-  text-align: center;
+    font-size: 3em;
+    line-height: 1em;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: var(--blue1);
+    text-align: center;
 }
 
+
 #profile-email {
-  margin-bottom: 16px;
-  color: var(--blue1);
-  text-align: center;
+    margin-bottom: 20px;
+    color: var(--blue1);
+    text-align: center;
 }
 
 #profile p {
-  margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
-/* =========================================================
-   Research Typography
-   ========================================================= */
-#research,
-#research p,
-#research .author_list,
-#research .research-links {
-  font-size: 1rem;
-  line-height: 1.45;
+
+.divider {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
 }
 
-/* =========================================================
-   Research: Media Cards
-   ========================================================= */
-.research-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.research-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-
-  padding: 16px 0;
-  border-bottom: 1px solid #eee;
-}
-
-/* Thumbnail box */
 .research-thumb {
-  position: relative;
-
-  /* fixed width for all thumbnails */
-  flex: 0 0 340px;
-  max-width: 340px;
-
-  border-radius: var(--radius);
-  background: #f5f7f9;
-  box-shadow: var(--shadow);
-  overflow: hidden;
+    width: 20em;
+    height: 20em;
+    float: left;
+    margin-top: 7px;
+    padding-right: 30px;
+    margin-bottom: 20px;
 }
 
-/* Fixed aspect ratio spacer.
-   NOTE: This is currently tuned to your existing media (not true 16:9). */
-.research-thumb::before {
-  content: "";
-  display: block;
-  padding-top: 41.33%;
+.research-thumb img {
+    width: 100%;
 }
 
-/* Media fills the thumbnail */
-.research-thumb > img,
-.research-thumb > video,
-.research-thumb > iframe {
-  position: absolute;
-  inset: 0;
-
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-  display: block;
-  border: 0;
-}
-
-/* =========================================================
-   Research: Text Block (FIXED vertical spacing)
-   ========================================================= */
-.paper_title {
-  flex: 1;
-  min-width: 0;
-
-  /* Key: make the block behave like a vertical stack that can “balance” */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  padding: 0;
-  margin: 0;
-}
-
-.paper_title h3 {
-  margin: 0;
-  padding: 0;
-  font-size: 1.05rem;
-  line-height: 1.25;
-}
-
-.paper_title h3 a,
-.paper_title h3 a b,
-.paper_title h3 b {
-  color: var(--orange1-bold);
-}
-
-.author_list {
-  color: var(--black1);
-  font-size: 1em;
-  margin: 2px 0 0px;
-  line-height: 1.35;
-}
-
-.author_list a,
-.author_list a b {
-  color: var(--black1);
-}
-
-.research-links {
-  color: var(--orange1-bold);
-  line-height: 1.3;
-
-  /* Push links down to help bottom-align with thumbnail */
-  margin-top: auto;
-}
-
-.research-links a {
-  margin-right: 2px;
-  font-size: 0.85em;
-}
-
-.research-links a,
-.research-links a b {
-  color: var(--orange1-bold);
-}
-
-/* =========================================================
-   Pills (optional)
-   ========================================================= */
-.pill {
-  display: inline-block;
-  font-size: 12px;
-  padding: 2px 8px;
-  border-radius: 999px;
-
-  background: #f2f4f6;
-  margin-right: 6px;
-  color: #4b5563;
-}
-
-/* =========================================================
-   Responsive
-   ========================================================= */
-@media (max-width: 900px) {
-  #profile {
-    padding: 100px 16px 12px;
-  }
-
-  #profile-pic {
-    float: none;
-    margin: 0 0 16px;
-  }
-
-  #profile img {
-    width: 260px;
-    max-width: 70vw;
-  }
-
-  #header {
-    justify-content: space-between;
-    padding-inline: 12px;
-  }
-}
-
-@media (max-width: 800px) {
-  .research-item {
-    flex-direction: column;
-  }
-
-  .research-thumb {
-    flex-basis: auto;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  ul {
-    padding-left: 24px;
-  }
+.research-proj-title {
+    color: var(--blue1);
+    font-weight: 400;
 }
