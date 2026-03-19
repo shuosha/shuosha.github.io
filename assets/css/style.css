@@ -22,6 +22,9 @@ html, p{
 p{
     margin: 0.2em;
 }
+#updates b {
+    font-weight: 450;
+}
 
 /* ol, ul {
     list-style: none;
